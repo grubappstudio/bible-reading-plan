@@ -641,8 +641,9 @@ footer {
   A daily journey through God's Word
 </footer>
 
+
 <script>
-function showPage(pageId,navId) {
+function showPage(pageId, navId) {
   document.querySelectorAll('.page').forEach(page => {
     page.classList.remove('active');
   });
@@ -654,12 +655,14 @@ function showPage(pageId,navId) {
   document.getElementById(pageId).classList.add('active');
 
   const navButton = document.getElementById(navId + 'Nav');
-  if(navButton) navButton.classList.add('active');
+  if (navButton) navButton.classList.add('active');
 
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 }
 
-function openLesson() 
+function openLesson() {
+  showPage('lessonPage', 'home');
+}
 
 const progressKey = 'biblePlanWeek4Day2Complete';
 
@@ -710,8 +713,8 @@ openLesson = function() {
 };
 
 updateProgress();
-
 </script>
+
 
 </body>
 </html>
