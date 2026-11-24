@@ -65,7 +65,6 @@ window.BIBLE_PLAN = {
       duration: "Approximately 10 minutes",
 
       sections: [
-
         {
           heading: "1. Scripture Reading",
           paragraphs: [
@@ -73,7 +72,6 @@ window.BIBLE_PLAN = {
             "Pay particular attention to God's promise to Abraham and Abraham's response of faith."
           ]
         },
-
         {
           heading: "2. Historical & Biblical Context",
           paragraphs: [
@@ -82,7 +80,6 @@ window.BIBLE_PLAN = {
             "In Genesis 15, Abraham expresses concern about having no heir. God responds by reassuring him that His promise will be fulfilled."
           ]
         },
-
         {
           heading: "3. Understanding the Passage",
           paragraphs: [
@@ -92,7 +89,6 @@ window.BIBLE_PLAN = {
             "Abraham believes God's promise. His faith is counted to him as righteousness. This does not mean Abraham earned God's favor through his own accomplishments. It shows the importance of trusting God's word."
           ]
         },
-
         {
           heading: "4. Key Verses",
           points: [
@@ -110,7 +106,6 @@ window.BIBLE_PLAN = {
             }
           ]
         },
-
         {
           heading: "5. Old Testament Connections",
           points: [
@@ -128,7 +123,6 @@ window.BIBLE_PLAN = {
             }
           ]
         },
-
         {
           heading: "6. New Testament Connections",
           points: [
@@ -146,7 +140,6 @@ window.BIBLE_PLAN = {
             }
           ]
         },
-
         {
           heading: "7. Prophecy & Fulfillment",
           paragraphs: [
@@ -155,7 +148,6 @@ window.BIBLE_PLAN = {
             "This demonstrates how God's promise to Abraham becomes part of the larger biblical story of salvation through Jesus."
           ]
         },
-
         {
           heading: "8. Big-Picture Biblical Connections",
           paragraphs: [
@@ -164,7 +156,6 @@ window.BIBLE_PLAN = {
             "What begins as a promise to one man becomes part of God's plan to bring blessing and salvation to people from every nation."
           ]
         }
-
       ],
 
       takeaway: {
@@ -189,9 +180,149 @@ window.BIBLE_PLAN = {
           "Practice trusting God's character even when you cannot see the outcome."
         ]
       }
+    },
+
+    "4-3": {
+      week: 4,
+      day: 3,
+      title: "Faith That Works",
+      reference: "James 2:14–26",
+      duration: "Approximately 10 minutes",
+
+      sections: [
+        {
+          heading: "1. Scripture Reading",
+          paragraphs: [
+            "Read James 2:14–26 in your NIV Bible. As you read, pay attention to how James connects genuine faith with a person's actions."
+          ]
+        },
+        {
+          heading: "2. Historical & Biblical Context",
+          paragraphs: [
+            "James wrote to believers scattered outside their homeland. His letter addresses practical Christian living, including trials, humility, speech, favoritism, and care for people in need.",
+            "In this passage, James confronts a form of religious profession that claims to believe but produces no evidence of that belief. He is not teaching that people earn salvation through good works. He is challenging the idea that someone can possess genuine saving faith while remaining unchanged in how they live.",
+            "James and Paul address different errors. Paul rejects the idea that people earn salvation through works. James rejects the idea that a claim of faith without obedient action is genuine faith."
+          ]
+        },
+        {
+          heading: "3. Understanding the Passage",
+          paragraphs: [
+            "James begins with a question: What good is it if someone claims to have faith but has no works? His example is a fellow believer who lacks clothing and daily food. Offering kind words without providing practical help does not meet that person's needs.",
+            "James explains that faith without works is dead. Actions do not purchase salvation, but they reveal whether faith is living and genuine.",
+            "He uses Abraham as an example. Abraham's willingness to offer Isaac demonstrated the reality of his trust in God. His obedience did not replace faith; it brought his faith to expression.",
+            "James also mentions Rahab, whose actions demonstrated her belief in Israel's God. These examples show that genuine faith produces a response, even in very different people and circumstances.",
+            "The final comparison is direct: just as a body without the spirit is dead, faith without works is dead. A profession of belief that produces no response is empty."
+          ]
+        },
+        {
+          heading: "4. Key Verses",
+          points: [
+            {
+              reference: "James 2:17",
+              explanation: "Faith without works is dead. Genuine faith is not merely agreement with religious ideas; it changes how a person responds to God and others."
+            },
+            {
+              reference: "James 2:18",
+              explanation: "Faith is demonstrated through actions. Works make visible the trust a person professes."
+            },
+            {
+              reference: "James 2:22",
+              explanation: "Abraham's faith worked together with his actions. His obedience demonstrated and matured his faith."
+            },
+            {
+              reference: "James 2:26",
+              explanation: "James concludes that faith without works is like a body without breath: it is lifeless."
+            }
+          ]
+        },
+        {
+          heading: "5. Old Testament Connections",
+          points: [
+            {
+              reference: "Genesis 15:6",
+              explanation: "Abraham believed God, and it was counted to him as righteousness. James refers to this same faith when explaining how Abraham's later obedience demonstrated the reality of his trust."
+            },
+            {
+              reference: "Genesis 22:1–18",
+              explanation: "Abraham's willingness to offer Isaac showed his trust in God's promise. James points to this event as evidence of faith expressed through obedience."
+            },
+            {
+              reference: "Joshua 2:1–21",
+              explanation: "Rahab protected the Israelite spies because she recognized the Lord's power. Her actions demonstrated the belief she expressed."
+            },
+            {
+              reference: "Micah 6:8",
+              explanation: "God calls His people to act justly, love mercy, and walk humbly with Him. Genuine relationship with God is reflected in everyday conduct."
+            }
+          ]
+        },
+        {
+          heading: "6. New Testament Connections",
+          points: [
+            {
+              reference: "Ephesians 2:8–10",
+              explanation: "Salvation is by grace through faith, not the result of works. Yet believers are created in Christ Jesus for good works. Works are the result of salvation, not its purchase price."
+            },
+            {
+              reference: "Matthew 7:16–20",
+              explanation: "Jesus teaches that a tree is recognized by its fruit. A person's life provides evidence of what is happening within."
+            },
+            {
+              reference: "John 14:15",
+              explanation: "Jesus connects love for Him with keeping His commandments. Obedience is a response of love, not a way to earn His love."
+            },
+            {
+              reference: "Galatians 5:6",
+              explanation: "Paul describes faith expressing itself through love. Genuine faith becomes visible in a life shaped by love."
+            },
+            {
+              reference: "1 John 3:16–18",
+              explanation: "John teaches that love should be expressed through actions and truth, not words alone. This echoes James's example of helping a believer in need."
+            }
+          ]
+        },
+        {
+          heading: "7. Prophecy & Fulfillment",
+          paragraphs: [
+            "This passage does not focus on a specific prophecy and its fulfillment. Instead, it develops a consistent biblical theme: God's people are called to demonstrate genuine trust through faithful living.",
+            "The teaching of James reflects the message of Jesus and the wider testimony of Scripture. Faith is not simply something a person says; it is a relationship with God that shapes the way a person lives."
+          ]
+        },
+        {
+          heading: "8. Big-Picture Biblical Connections",
+          paragraphs: [
+            "Scripture consistently teaches that salvation begins with God's grace. Abraham believed God's promise, Israel was called to walk in God's ways, Jesus called His followers to bear fruit, and the apostles taught that believers are created for good works.",
+            "James does not contradict salvation by grace. He helps us understand what living faith looks like. Good works are not the foundation of salvation; they are evidence of a life being transformed by God.",
+            "This passage also connects belief with love for others. Caring for people in practical ways is one important expression of faith. A growing relationship with God should influence our priorities, decisions, compassion, and obedience."
+          ]
+        }
+      ],
+
+      takeaway: {
+        heading: "9. KEY TAKEAWAY / LESSON",
+        statement: "Genuine faith produces a changed life.",
+        explanation: "We are saved by God's grace through faith, not by earning salvation through good works. But living faith does not remain alone. It produces obedience, compassion, and actions that reflect trust in God."
+      },
+
+      reflection: {
+        heading: "10. Reflection Questions",
+        questions: [
+          "What is the difference between believing facts about God and genuinely trusting Him?",
+          "Where might your actions need to better reflect what you say you believe?",
+          "How can you put your faith into practice by serving or helping someone this week?"
+        ]
+      },
+
+      application: {
+        heading: "11. Practical Application",
+        paragraphs: [
+          "Consider one area of your life where you know what God calls you to do but have been slow to respond. Ask Him to help you put your faith into action.",
+          "Look for a practical opportunity to help someone in need. Rather than stopping at good intentions, take one meaningful step.",
+          "Remember that obedience does not earn God's grace. It is a response to the grace He has already given."
+        ]
+      }
     }
 
   }
 
 };
-
