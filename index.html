@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F7F5EF">
+<title>Bible Reading Plan</title>
+
+<style>
+:root {
+  --background: #F7F5EF;
+  --surface: #FFFFFF;
+  --sage-light: #E6EDE5;
+  --sage: #617D68;
+  --sage-dark: #405B47;
+  --gold: #D6BD89;
+  --text: #303A32;
+  --muted: #788078;
+  --border: #E8E9E2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--sage-light);
+  padding: 38px 24px 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner, main, nav {
+  max-width: 850px;
+  margin: auto;
+}
+
+.eyebrow {
+  color: var(--sage-dark);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 6vw, 42px);
+  line-height: 1.2;
+  margin: 8px 0;
+  color: var(--sage-dark);
+}
+
+.subtitle {
+  color: #657168;
+  margin: 0;
+  font-size: 16px;
+}
+
+main {
+  padding: 30px 22px 100px;
+}
+
+.section-heading {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  margin: 28px 0 14px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 23px;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 12px rgba(40,60,40,.035);
+}
+
+.reading-card {
+  background: var(--sage-dark);
+  color: white;
+  border: none;
+  padding: 27px;
+}
+
+.reading-card .eyebrow {
+  color: #DCE8DA;
+}
+
+.reading-card h2 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  margin: 9px 0;
+}
+
+.reading-card p {
+  color: #E1E9E0;
+  margin: 5px 0 20px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.primary-button {
+  background: #F7F5EF;
+  color: var(--sage-dark);
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.progress-track {
+  display: flex;
+  gap: 8px;
+}
+
+.progress-day {
+  flex: 1;
+  height: 9px;
+  border-radius: 20px;
+  background: #E9ECE7;
+}
+
+.progress-day.complete {
+  background: var(--sage);
+}
+
+.progress-note {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 12px 0 0;
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.menu-card:hover {
+  background: #F8FAF7;
+}
+
+.menu-title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.menu-description {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.arrow {
+  color: var(--sage);
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  background: rgba(247,245,239,.97);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-button {
+  background: transparent;
+  color: var(--muted);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.nav-button.active {
+  background: var(--sage-light);
+  color: var(--sage-dark);
+  font-weight: bold;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.placeholder {
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.placeholder-icon {
+  font-size: 38px;
+}
+
+.placeholder h2 {
+  font-family: Georgia, serif;
+  color: var(--sage-dark);
+}
+
+footer {
+  color: var(--muted);
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+}
+
+@media(max-width:480px) {
+  header {
+    padding: 30px 20px 26px;
+  }
+
+  main {
+    padding: 20px 16px 95px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  nav {
+    gap: 4px;
+  }
+
+  .nav-button {
+    padding: 9px 12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">Personal Bible Study</div>
+    <h1>Bible Reading Plan</h1>
+    <p class="subtitle">Grow in understanding. Grow in faith.</p>
+  </div>
+</header>
+
+<main>
+
+  <section id="homePage" class="page active">
+
+    <h2 class="section-heading">Continue Your Reading</h2>
+
+    <div class="card reading-card">
+      <div class="eyebrow" id="lessonLabel">Next Reading</div>
+      <h2 id="lessonTitle">Week 4 · Day 2</h2>
+      <p id="lessonReference">Your next Bible reading awaits.</p>
+      <button class="primary-button" onclick="openLesson()">
+        Continue Reading →
+      </button>
+    </div>
+
+    <h2 class="section-heading">Reading Progress</h2>
+
+    <div class="card">
+      <div class="progress-header">
+        <strong>This Week</strong>
+        <strong id="progressCount">0 of 5 days</strong>
+      </div>
+
+      <div class="progress-track" id="progressTrack">
+        <div class="progress-day"></div>
+        <div class="progress-day"></div>
+        <div class="progress-day"></div>
+        <div class="progress-day"></div>
+        <div class="progress-day"></div>
+      </div>
+
+      <p class="progress-note">
+        Keep moving forward, one day at a time.
+      </p>
+    </div>
+
+    <h2 class="section-heading">Explore Your Plan</h2>
+
+    <div class="card menu-card" onclick="showPage('planPage','plan')">
+      <div>
+        <div class="menu-title">Reading Plan</div>
+        <div class="menu-description">View your weekly Bible readings</div>
+      </div>
+      <span class="arrow">›</span>
+    </div>
+
+    <div class="card menu-card" onclick="showPage('historyPage','history')">
+      <div>
+        <div class="menu-title">Study History</div>
+        <div class="menu-description">Revisit completed Bible lessons</div>
+      </div>
+      <span class="arrow">›</span>
+    </div>
+
+  </section>
+
+  <section id="planPage" class="page">
+    <h2 class="section-heading">Reading Plan</h2>
+    <div class="card">
+      <p>Your weekly Bible reading schedule will appear here.</p>
+      <p>Five readings each week, following a balanced journey through Scripture.</p>
+    </div>
+  </section>
+
+  <section id="historyPage" class="page">
+    <h2 class="section-heading">Study History</h2>
+    <div class="card">
+      <p>Your completed lessons and saved study notes will appear here.</p>
+    </div>
+  </section>
+
+  <section id="lessonPage" class="page">
+    <h2 class="section-heading">Today's Lesson</h2>
+    <div class="card">
+      <p>Our guided Bible study lessons will appear here.</p>
+      <p>Each lesson will include Scripture, historical context, biblical connections, a highlighted key takeaway, reflection, and practical application.</p>
+    </div>
+  </section>
+
+</main>
+
+<nav>
+  <button class="nav-button active" id="homeNav"
+    onclick="showPage('homePage','home')">Home</button>
+  <button class="nav-button" id="planNav"
+    onclick="showPage('planPage','plan')">Plan</button>
+  <button class="nav-button" id="historyNav"
+    onclick="showPage('historyPage','history')">History</button>
+</nav>
+
+<footer>
+  A daily journey through God's Word
+</footer>
+
+<script>
+function showPage(pageId,navId) {
+  document.querySelectorAll('.page').forEach(page => {
+    page.classList.remove('active');
+  });
+
+  document.querySelectorAll('.nav-button').forEach(button => {
+    button.classList.remove('active');
+  });
+
+  document.getElementById(pageId).classList.add('active');
+
+  const navButton = document.getElementById(navId + 'Nav');
+  if(navButton) navButton.classList.add('active');
+
+  window.scrollTo(0,0);
+}
+
+function openLesson() {
+  showPage('lessonPage','home');
+}
+</script>
+
+</body>
+</html>
