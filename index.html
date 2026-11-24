@@ -532,8 +532,13 @@ function renderLesson(lessonId) {
   document.getElementById('lessonContent').innerHTML = html;
 }
 
-function openLesson(lessonId = '4-2') {
-  renderLesson(lessonId);
+function openLesson() {
+  const nextLessonId =
+    localStorage.getItem('biblePlanWeek4Day2Complete') === 'true'
+      ? '4-3'
+      : '4-2';
+
+  renderLesson(nextLessonId);
   showPage('lessonPage', 'home');
 }
 
