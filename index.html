@@ -289,15 +289,15 @@ footer {
     <div class="card">
       <div class="progress-header">
         <strong>This Week</strong>
-        <strong id="progressCount">0 of 5 days</strong>
+        <strong id="progressCount">1 of 5 days</strong>
       </div>
 
       <div class="progress-track" id="progressTrack">
-        <div class="progress-day"></div>
-        <div class="progress-day"></div>
-        <div class="progress-day"></div>
-        <div class="progress-day"></div>
-        <div class="progress-day"></div>
+<div class="progress-day complete"></div>
+<div class="progress-day"></div>
+<div class="progress-day"></div>
+<div class="progress-day"></div>
+<div class="progress-day"></div>
       </div>
 
       <p class="progress-note">
@@ -615,11 +615,12 @@ footer {
       Take a moment to consider what you have learned and how
       you can carry this lesson into your daily life.
     </p>
-    <button class="primary-button"
-      style="background:var(--sage-dark);color:white;"
-      onclick="showPage('homePage','home')">
-      Return to Home
-    </button>
+<button class="primary-button"
+  id="completeButton"
+  style="background:var(--sage-dark);color:white;"
+  onclick="markLessonComplete()">
+  Mark Lesson Complete ✓
+</button>
   </div>
 
 </section>
@@ -658,7 +659,59 @@ function showPage(pageId,navId) {
   window.scrollTo(0,0);
 }
 
-function openLesson() {
+function openLesson() 
+
+const progressKey = 'biblePlanWeek4Day2Complete';
+
+function updateProgress() {
+  const completed = localStorage.getItem(progressKey) === 'true';
+  const count = completed ? 2 : 1;
+
+  document.getElementById('progressCount').textContent =
+    count + ' of 5 days';
+
+  const days = document.querySelectorAll('.progress-day');
+
+  days.forEach((day, index) => {
+    day.classList.toggle('complete', index < count);
+  });
+
+  if (completed) {
+    document.getElementById('lessonLabel').textContent =
+      'Next Reading';
+
+    document.getElementById('lessonTitle').textContent =
+      'Week 4 · Day 3';
+
+    document.getElementById('lessonReference').textContent =
+      'James 2:14–26 · Faith and Works';
+  }
+}
+
+function markLessonComplete() {
+  localStorage.setItem(progressKey, 'true');
+
+  updateProgress();
+
+  showPage('homePage', 'home');
+
+  alert('Great work! Week 4, Day 2 is complete. Your next reading is James 2:14–26.');
+}
+
+const originalOpenLesson = openLesson;
+
+openLesson = function() {
+  if (localStorage.getItem(progressKey) === 'true') {
+    alert('Your next reading is James 2:14–26. We will add that lesson next.');
+    return;
+  }
+
+  originalOpenLesson();
+};
+
+updateProgress();
+
+{
   showPage('lessonPage','home');
 }
 </script>
